@@ -1,0 +1,136 @@
+h1 {
+
+    text-shadow: 0px 0px 5px #FF0000;
+    box-shadow: 0px 0px 2px #2cbe58;
+}
+
+
+body {
+    background-image: url('background.jpg'); /* Add your background image */
+    background-size: cover; /* Ensures the image covers the full page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps background fixed on scroll */
+}
+
+/* Scrolling Text Effect */
+.scroll-text {
+    white-space: nowrap;          /* Prevents text from wrapping */
+    overflow: hidden;             /* Hides overflow */
+    animation: scroll-left 12s linear infinite; /* Scroll effect */
+    font-size: 24px;              /* Text size */
+    color: #ffffff;               /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for visibility */
+    padding: 10px;                /* Padding for better spacing */
+    border-radius: 10px;          /* Rounded corners */
+    margin: 20px 0;               /* Adds spacing above and below */
+}
+
+/* Animation for Scrolling */
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%); /* Start position */
+    }
+    to {
+        transform: translateX(-100%); /* End position */
+    }
+}
+
+
+body {
+    background-image: url('Output.jpg');
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-size: cover; /* Ensures the image covers the full page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps background fixed on scroll */
+}
+
+<br>
+
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url('background.jpg') no-repeat center center/cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background-color: rgba(144, 238, 144, 0.9); /* Light green with slight transparency */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 350px;  /* Optimal size for better alignment */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;     /* Ensures proper alignment */
+    margin-bottom: 15px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    font-size: 16px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 12px 35px; /* Balanced size with icons */
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
