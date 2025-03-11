@@ -4,6 +4,64 @@ h1 {
     box-shadow: 0px 0px 2px #2cbe58;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    width: 100%;
+    background-color: #2cbe58;
+    color: #fff;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.navbar .navbar-logo h1 {
+    font-size: 24px;
+    color: #79a416;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.navbar ul li{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    
+}
+
+.navbar ul li{
+   position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.3s ease;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body {
     background-image: url('background.jpg'); /* Add your background image */
@@ -100,8 +158,10 @@ input[type="password"] {
     box-sizing: border-box; /* Prevents overflow */
 }
 
+
+
 button {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     background-color: #4CAF50;
     color: #ffffff;
