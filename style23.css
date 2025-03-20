@@ -1,48 +1,63 @@
-div {
-    background-color: aqua;
-    color: black;
-    height: 100px;
-    width: 300px; 
-    padding: 10px;
-    margin: 10px auto; /* Center the div */
-    text-align: center;
-    font-size: 16px;
-    border-radius: 8px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
+/* Parent container to center content */
+
+.Tags-Practice {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Light background */
+  background-color: aqua;
+  border-radius: 10px;
+  box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    border: 2px solid black;
-    outline: #4CAF50 solid 10px;
-    width: 60px;
-    margin: auto;  
-    padding: 20px;
-    text-align: center;
+/* Style for h2 inside Tags-Practice */
+.Tags-Practice h2 {
+  border-style:groove;
+  text-align: center;
+  font-size: 28px;
+  color: navy;
+  background-color: darkorchid;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
-img {
-    opacity: 0.6;
+/* Style for h4 inside Tags-Practice */
+.Tags-Practice h5 {
+  border: 3px solid #0077b6;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 60%;
+  margin: 10px auto;
+  border-radius: 5px;
 }
 
-ul.a{
-
-    list-style-type:circle;
+/* Style for h3 inside Tags-Practice */
+.Tags-Practice h3 {
+  text-align: center;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 15px auto;
+  width: 70%;
 }
 
-ul.b {
-    list-style-type: square;
-  }
-  
-  ol.c {
-    list-style-type: upper-roman;
-  }
-  
-  ol.d {
-    list-style-type: lower-alpha;
-  }
-  
-  a {
-    color: rgb(15, 26, 103); }
+/* Style for h1 inside Tags-Practice */
+.Tags-Practice h1::first-line {
+  text-align: center;
+  color: darkred;
+  font-size: 200px;
+  font-weight: bold;
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+.Tags-Practice span {
+
+  display: block;
+}
+
