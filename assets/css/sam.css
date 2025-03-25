@@ -66,7 +66,8 @@ ul {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #f1f1f1;
+    background-color: #002B36;
+    color: azure;
   }
   
   li a {
@@ -78,7 +79,7 @@ ul {
   
   /* Change the link color on hover */
   li a:hover {
-    background-color: #555;
+    background-color:rgb(0, 128, 128);
     color: white;
   }
 
