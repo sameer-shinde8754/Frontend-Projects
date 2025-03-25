@@ -1,0 +1,164 @@
+body {
+  
+    font-family: "poppins", "Helvetica Neue", Helvetica, Arial, sans-Monaco, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.sample-logo{
+    width: auto;
+    height: 60px;
+}
+
+h1{
+background-color: burlywood;
+color: cadetblue;
+padding: 4px;
+text-align: center;
+
+box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.6);
+}
+
+h1:hover{
+color: rgb(232, 232, 28);
+transition: color 0.3s ease;
+text-decoration: underline;
+font-weight: bold;
+cursor: pointer;
+}
+
+.contact{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.6);
+}
+
+.contact:hover{
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.blog{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.6);
+}
+
+.site-header{
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  height: 60px;
+}
+
+.nav-menu{
+  list-style: none;
+  padding: 2px;
+
+
+}
+
+.nav-menu li{
+
+    display:inline;
+    padding:18px;
+    color: azure;
+    /* margin-right: 20px; */
+
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color:aqua;
+    font-family: "Merriweather", "Helvetica Neue", Helvetica, Arial, sans;
+    font-size: 20px;
+}
+
+.nav-menu li a:hover{
+    color: yellow;
+    transition: color 0.2s ease;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 4px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+/* Project Highlights Section */
+.project-highlights {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-highlights h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.highlights-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.highlight-item i {
+    font-size: 30px;
+    color: #63E6BE;
+}
+
+.highlight-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.highlight-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
