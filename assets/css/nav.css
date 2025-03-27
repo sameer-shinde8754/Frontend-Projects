@@ -1,0 +1,100 @@
+/* Reset Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #297d7a;
+    color: aqua;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 80px;
+}
+
+/* Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.sample-logo {
+    width: auto;
+    height: 60px;
+}
+
+/* Navigation Styling */
+.nav-container {
+    flex: 1; /* Makes it take available space */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Creates space between menu items */
+    padding: 0;
+    margin-left: 50px; /* Adjust margin between logo and menu */
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Button Container (Right Side) */
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+/* Buttons */
+.contact, .blog {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact {
+    background-color: #a30c0c;
+    color: white;
+}
+
+.contact:hover {
+    background-color: #c1acac;
+    color: black;
+}
+
+.blog {
+    background-color: #0c5ca3;
+    color: white;
+}
+
+.blog:hover {
+    background-color: #aac1f3;
+    color: black;
+}
