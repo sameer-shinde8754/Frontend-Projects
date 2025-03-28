@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Practice</title>
-    <link rel="stylesheet" href="/assets/css/header.css"> <!-- Linking External CSS -->
+    <link rel="stylesheet" href="/assets/css/nav.css"> <!-- Linking External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
     <!-- Header Section -->
-    <header class="site-header">
+    <header class="header-container">
         <!-- Logo -->
-        <div class="logo-container">
+        <div class="logo-content">
             <img src="/assets/images/Myntra-Logo.png" alt="sample-img" class="sample-logo">
+
+            <label for="" class="icons">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+           
         </div>
 
         <!-- Navigation Menu -->
-        <nav class="nav-container">
+        <nav class="nav-bar">
             <ul class="nav-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
+                <li><a href="#">Contact &nbsp;<i class="fas fa-caret-down"> </i></a>
+                    
             </ul>
         </nav>
 
         <!-- Buttons (aligned to the right) -->
         <div class="nav-buttons">
-            <button class="contact"><a href="#">Contact</a></button>
-            <button class="blog"><a href="#">Blog</a></button>
+            <button class="Subscribe"><a href="#"> Subscribe </a></button>
         </div>
     </header>
 

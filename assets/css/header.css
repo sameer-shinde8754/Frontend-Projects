@@ -1,6 +1,6 @@
 body {
   
-     font-family: "Poppins", sans-serif;    
+    font-family: "Poppins", sans-serif;    
     padding: 0;
     margin: 0;
     cursor: default;
@@ -111,11 +111,10 @@ cursor: pointer;
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    min-width: 200px; /* Reduced width */
+    background-color: #8c0e4d;
+    min-width: 150px; /* Reduced width */
     padding: 5px 0;
-    z-index: 99;
+    z-index: 999;
     border-radius: 5px;
 }
 
@@ -145,20 +144,30 @@ cursor: pointer;
 /* Hover Effect */
 .dropdown__menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ebcadb;
     display: block;
     transition: all 0.3s ease-in-out;
 }
 
-.dropdown__menu ul li:hover {
-    background-color: #f4f4f4;
-    cursor: pointer;
+.dropdown__menu ul li a:hover {
+    background-color: #b6198e;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
 }
+
+
 
 .dropdown__menu ul li a i {
     margin-left: 2px;
 }
 
+.dropdown__menu li a{
+
+    text-align: center;
+    padding: 10px 20px;
+}
 
 
 
@@ -204,6 +213,7 @@ cursor: pointer;
 
 .highlight-item {
     background: #ffffff;
+
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
@@ -218,15 +228,18 @@ cursor: pointer;
 
 .highlight-item p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    color: #333;
+    color: #2e0b0b;
 }
 
 .highlight-item:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #cb8039;
 }
+
+
 /* header ends here */
 
 
@@ -256,7 +269,7 @@ cursor: pointer;
 }
 
 .middle-container input {
-    width: 60%;
+    width: 30%;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -266,8 +279,8 @@ cursor: pointer;
 }
 
 .subscribe-btn {
-    display: block;
-    width: 30%;
+    /* display: block; */
+    width: 15%;
     margin: 20px auto 0;
     padding: 10px;
     border: none;
@@ -281,5 +294,27 @@ cursor: pointer;
 .subscribe-btn:hover {
     background-color: #c0392b;
 }
+
+
+
+
+
+/* middle contents ends here */
+
+.form-container{
+
+
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 4px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.6);
+    border-radius: 20px;
+    position: relative;
+}
+
 
 
