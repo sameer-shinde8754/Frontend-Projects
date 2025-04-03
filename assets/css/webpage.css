@@ -3,40 +3,147 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+
 }
 
 body {
-    body {
-        background: url(/assets/images/carehub.avif) no-repeat center center/cover;
-        background-size: cover;
-        background-attachment: fixed;
-        color: white;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/images/health.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100pvh;
+    width: 100vw;
+
     
+}
+
+/* Header Styles */
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background: #907ee2;
+    color: rgb(224, 135, 135);
+}
+
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+} */
+
+.logo img{
+
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+    transition: width 0.3s ease;
+}
+
+/* Menu nav Styles */
+
+.nav {
+    display: flex;
+    gap: 40px;
+    
+}
+.nav a, .dropdown {
+    color: rgb(10, 62, 77);
+    text-decoration: none;
+    font-size: 18px;
+
+    position: relative;
+    cursor: pointer;
 
 }
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(58, 91, 151);
+
+    color: rgb(255, 255, 255);
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+}
+/* 
+.dropdown-content a:hover {
+    background: #ddd;
+} */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header .button {
+    padding: 8px 15px;
+    background: rgb(58, 91, 151);
+    color: #ffffff;
+    border: none;
+    cursor: pointer; 
+    font-size: 15px;   
+    font-weight: bold;
+    border-radius: 8px;
+    height: 60px;
+    width: 100px;
+
+}
+
+.header .button:hover {
+    background: #b90f89;
+
+
+}
+
+
+/* contents starts from here */
+
+
 
 .container {
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
+    padding: 50px;   
+    /* margin-bottom: 40px; */
+    justify-content: space-around;
+    
+
+    
 }
 
-.content {
-    width: 50%;
-}
+/* .content {
+    
+
+} */
 
 .content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    font-weight: bold;
+    
 }
 
 .content span {
-    color: #c9b2f3;
+    color: #8465bd;
 }
 
 .content p {
@@ -45,57 +152,170 @@ body {
 }
 
 
+.container h5{
+
+    color: #184a96;
+}
+
+
 /* button CSS */
 
 .buttons {
     margin-top: 20px;
-}
-
-.button {
-    padding: 20px 24px;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 5px;
+   
 }
 
 .btn-1 {
-    background: #d8dfe7;
-    color: rgb(59, 4, 4);
+    background: #4d8ed8;
+    color: rgb(255, 255, 255);
     padding: 20px 16px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 300px;
+    font-weight: 300;
 
+}
+
+.btn-1:hover {
+    background: #b90f89;
 }
 
 .btn-2 {
-    background: #d8dfe7;
-    color: rgb(47, 3, 3);
+    background: #5a94d6;
+    color: rgb(255, 255, 255);
     padding: 20px 16px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: 400;
 
 }
+
+.btn-2:hover {
+    background: #b90f89;
+}
+
+
+.btn-3 {
+    background: #4d8ed8;
+    color: rgb(255, 255, 255);
+    padding: 20px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+
+.btn-3:hover {
+    background: #b90f89;
+}
+
+/* Image Div */
 
 .dashboard {
     border-radius: 10px;
-  width: 50%;
-  height: -webkit-fill-available;
-
-    background: rgb(4, 54, 81);
+    display: flex;
+    width:auto;
+    height: auto; 
+    /* background: rgb(4, 54, 81); */
     padding: 20px;
+    overflow: hidden;
+}
+
+
+
+.dashboard img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     border-radius: 10px;
 }
-.dashboard img{
-background-repeat: no-repeat;
-background-size: cover;
-width: -webkit-fill-available;
-height:  -webkit-fill-available;
+
+
+
+/*  Card CSS */
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
+
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: rgb(0, 80, 150);
+    background: rgb(29, 159, 176);
+
+}
+
+.card i {
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #b90f89; */
+    height: 40px;
+    color: rgb(12, 67, 82);
+    
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 16px;
+    color: rgb(9, 47, 58);
+    font-size: medium;
+    font-weight: 600;
+}
+ 
+
+
+.card:hover {
+    background: #907ee2;
+
+
+}
+
+
+.card-container .quote{
+
+    font-size: 30px;
+    color: rgb(5, 42, 52);
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.card-container .span-content{
+    
+
+    font-size: 18px;
+    color: rgb(20, 93, 113);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
 
