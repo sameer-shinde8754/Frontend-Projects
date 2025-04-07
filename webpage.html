@@ -13,14 +13,17 @@
 
         <div class="logo">
 
-        <img src="/assets/images/wellness.png" alt="image"> </div>
+        <img src="/assets/images/wellness.png" alt="image">
+     </div>
 
         <nav class="nav">
             <a href="#">Home</a>
             <a href="#">About</a>
 
+            <!-- Dropdown 1 -->
+
             <div class="dropdown">
-                <span> Services </span>
+                <span> Services &nbsp;<i class="fa-solid fa-chevron-down"></i>  </span>
                 <div class="dropdown-content">
                     
                     <a href="#">EHR</a>
@@ -28,9 +31,38 @@
                     <a href="#">AI Development</a>
                 </div>
             </div>
-            <a href="#">Contact</a>
+        
+            <!-- Dropdown 2 -->
+            <div class="dropdown">
+            <span class="dropdown-toggle">Products  &nbsp;<i class="fa-solid fa-angle-down"></i> </span>
+            <div class="dropdown-content">
+            <a href="#">Product Design</a>
+            <a href="#">Web Design</a>
+            <a href="#">Branding</a>
+            <a href="#">Mobile App</a>
+           </div>
+        </div>
+
+
+                           
+
         </nav>
-        <button class="button">Sign Up</button>
+
+        <!-- <form class="d-flex" role="search">
+
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+
+        <button class="button"> <i class="fa-solid fa-user-doctor"></i> &nbsp; Patient Portal </button>
+        </form> -->
+
+        <form class="d-flex" role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn-outline" type="submit">  Patient Portal  </button>
+          </form>
+
+
+    
+
 
     </header>
 
@@ -89,6 +121,27 @@
            <span class="span-content"> Secure and feature-rich healthcare custom software development within budget  </span> </p>
         </div>
 
+          
+        <div class="providers-wrapper">
+            <div class="provider-map">
+              <img src="/assets/images/networking-removebg-preview.png" class="img-fuild" alt="Provider Network Map" />
+            </div>
+          
+            <div class="provider-text">
+              <h5>OUR PROVIDERS</h5>
+              <h2>World-class providers.<br />Top-notch care.</h2>
+              <p>
+                Connect with expert therapists & psychiatric providers who put you first.
+                Our nationwide network ensures you receive the best of the best in mental health care.
+              </p>
+              <button class="btn-meet">Meet Our Providers</button>
+            </div>
+         
+          
+
+        </div>
+
+        
     
 
     
@@ -97,6 +150,3 @@
  
   
     
-  
-</body>
-</html> 
