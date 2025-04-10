@@ -128,25 +128,11 @@ i{
     align-items: center;
     justify-content: left;
     margin-right: 30px;
+
 }
 
-    /* .center-text{
-
-        text-align: center;
-        margin-right: 30px;
-    }
-
-    h1{
-        
-        color: #721817;
-    }   
-
-    h2{
-
-        color: #721817;
-    } */
-
-/* Center Text Styles */
+ 
+/* text Styles */
 
 .center-text {
     text-align: left;
@@ -330,3 +316,110 @@ i{
 
 
 
+
+
+/* Section 2 css */
+
+.content-section{
+
+    display: flex;
+    text-align: left;
+    justify-content:space-evenly;
+    padding: 50px 10%;
+    /* background: #effaff; */
+    border-radius: 12px;
+    margin-top: 70px;
+    font-size: 1.2rem;
+
+
+
+}
+
+
+.business-insight-img{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-right: 30px;
+    
+
+}
+
+ 
+/* text Styles */
+
+.business-insight-text {
+    text-align: left;
+    margin-right: 20px;
+}
+
+.business-insight-text h1{
+
+  font-size: 1.8rem;
+  width: 100%;
+  color: #17466e;
+  font-weight:bolder;
+
+}
+
+
+
+.business-insight-text p{
+
+    font-size:1.1rem;
+    margin-top: 10px;
+    width: 100%;
+    word-spacing: 2px;
+    letter-spacing: 0.4px;
+
+}
+
+
+
+#logo{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Button Styles */
+
+.button-city button{
+
+    padding: 10px 20px;
+    background: #2585d8;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: medium;
+    border-style: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    
+.button-ctn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+    
+
+.button-city button:hover{
+
+    background: #60c8e1;
+    color: #1d5485;
+
+}
+
+   
+    
+
+
+
+    
