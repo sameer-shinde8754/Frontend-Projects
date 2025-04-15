@@ -1,0 +1,32 @@
+.card {
+    max-width: 320px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #b883d2;
+    text-align: center;
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+
+  /* Show only on tablet and up */
+  @media (min-width: 768px) {
+    .card {
+      display: block;
+    }
+  }
+
+  /* button on mobile */
+  @media (max-width: 312px) {
+    .btn {
+    }
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+  }

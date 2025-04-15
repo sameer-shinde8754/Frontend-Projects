@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+body {
+    background-color: bisque;
+    height: 100pvh;
+    width: 100vw;
+
+    
+}
+
+
+
+/* Nav */
+
+
+
+
+
+
+.custom-navbar {
+    background-color: #79c0d3;
+
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: #ffffff !important;
+    display: flex;
+    align-content: space-between !important;
+    align-items: center !important;
+  }
+  
+  .custom-navbar .nav-link:hover,
+  .custom-navbar .navbar-brand:hover {
+    color: #d1ecf1 !important;
+  }
+  
+  .custom-navbar .dropdown-menu {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-navbar .dropdown-item {
+    color: #0a1e55;
+  }
+  
+  .custom-navbar .dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #084c61;
+  }
+  
+  /* Sign Up Button */
+  .custom-signup-btn {
+    background-color: #ffffff;
+    color: #153569;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 6px 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-signup-btn:hover {
+    background-color: #dff1f6;
+    color: #084c61;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Accordin */
+
+
+
+/* .accordin-container{
+
+
+    margin-top: 40px;
+    display: flex;
+    margin-top: 20px;
+
+    
+
+} */
+
+
+.componenet{
+
+    margin-top: 40px;
+}
+
+.componenet h3{
+
+    text-align: center;
+    font-weight: bold;
+}

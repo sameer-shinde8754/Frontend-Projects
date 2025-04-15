@@ -88,7 +88,7 @@ i{
     display: block;
 }
 
-.button {
+.buton {
     padding: 18px 19px;
     background: rgb(40, 65, 147);
     color: #ffffff;
@@ -98,6 +98,7 @@ i{
     font-weight: bold;
     border-radius: 40px;
 }
+
 
 
 
@@ -316,6 +317,73 @@ i{
 
 
 
+@media screen and (max-width: 1024px) {
+
+      .hero{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+
+
+      }
+        .hero h1{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .hero h3{
+            font-size: 1.2rem;
+            text-align: left;
+            font-weight: bolder;
+            
+            
+        }
+
+
+
+        .center-text{
+
+            text-align: center;
+            margin-right: 0px;
+        }
+
+        .center-text p{
+
+            font-size: 1rem;
+            font-weight:bold;
+            color: rgb(24, 18, 76);
+        }
+       
+         .button-ctn{
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+        .button-ctn button{
+            padding: 10px 20px;
+            background: #040736;
+            margin-top: 30px;
+            color: #fcf9f9;
+            font-size: medium;
+            border-style: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+}
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Section 2 css */
@@ -417,9 +485,84 @@ i{
 
 }
 
-   
+
+@media screen and (max-width: 1024px) {
+
+      .content-section {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+      }
+
+        .content-section h1{
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .business-insight-text{
+
+            text-align: center;
+            margin-right: 0px;
+        }
+
+        .business-insight-text p{
+
+            font-size: 1rem;
+            font-weight:bold;
+            color: rgb(26, 5, 5);
+            text-align: left;
+        }
+       
+         .button-city{
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+         }
+
+        .button-city button{
+            padding: 10px 20px;
+            background: #040736;
+            margin-top: 30px;
+            color: #fcf9f9;
+            font-size: medium;
+            border-style: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+        .button-city button:hover{
+
+            background: #201079;
+            color: #4896bd;
+        }
+
+        .
+            
+}
+
+
     
 
+
+
+
+
+
+
+
+
+
+
+
+/* Section 3 CSS */
 
 
 
