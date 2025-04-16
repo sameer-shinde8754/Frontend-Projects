@@ -84,29 +84,112 @@ body {
 
 
 
-/* Accordin */
+
+
+/* Accordion Section */
+
+/* Base styles */
+
+.componenet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 10%;
+  border-radius: 12px;
+  margin-top: 70px;
+  gap: 20px;
+}
+
+.componenet h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.componenet .accordion-item {
+  padding: 20px;
+  background-color: rgb(178, 199, 224) !important;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.accordion-body ul {
+  padding-left: 20px;
+}
+
+.accordion-body h4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.accordion {
+  width: 50%;
+  
+}
+
+.image-container {
+  width: 40%;
+  margin-bottom: 30px;
+
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px
+}
 
 
 
-/* .accordin-container{
 
+/* Tablet view (screens less than 1024px) */
+@media (max-width: 1023px) {
+  .componenet {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 5%;
+  }
 
-    margin-top: 40px;
-    display: flex;
+  .accordion,
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container {
     margin-top: 20px;
-
-    
-
-} */
-
-
-.componenet{
-
-    margin-top: 40px;
+  }
 }
 
-.componenet h3{
+/* Mobile view (screens less than 768px) */
+@media (max-width: 767px) {
+  .componenet {
+    padding: 30px 5%;
+  }
 
-    text-align: center;
-    font-weight: bold;
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.95rem;
+  }
+
+  .componenet h3 {
+    font-size: 1.5rem;
+  }
 }
+
+
+
+
+
+
+
+
+
+/* next CSS 2 */
+
+/* Features Section Container */
+
+
+/* Flexbox container to align the accordion sections horizontally */
