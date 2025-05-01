@@ -1,0 +1,148 @@
+/* Common Accordion Styles */
+.accordion {
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .accordion {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .accordion {
+    width: 60%;
+  }
+}
+
+/* === THEME 1: Classic Blue === */
+.custom-accordion-one .accordion-button {
+  background-color: #e0f0ff;
+  color: #004080;
+  font-weight: bold;
+}
+
+.custom-accordion-one .accordion-button:not(.collapsed) {
+  background-color: #cce5ff;
+}
+
+.custom-accordion-one .accordion-body {
+  background-color: #f7fbff;
+  color: #003366;
+}
+
+/* === THEME 2: Dark Theme === */
+.custom-accordion-two .accordion-button {
+  background-color: #333;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.custom-accordion-two .accordion-button:not(.collapsed) {
+  background-color: #444;
+}
+
+.custom-accordion-two .accordion-body {
+  background-color: #222;
+  color: #ddd;
+}
+
+/* === THEME 3: Border Theme === */
+.custom-accordion-three {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.custom-accordion-three .accordion-button {
+  background-color: #fff;
+  border-bottom: 1px solid #007bff;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.custom-accordion-three .accordion-body {
+  border-top: 1px dashed #007bff;
+  background-color: #f0f8ff;
+  color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Accordion 1: Classic Blue Theme */
+.custom-accordion-one .accordion-button {
+  background-color: #007bff;
+  color: white;
+}
+.custom-accordion-one .accordion-button:not(.collapsed) {
+  background-color: #0056b3;
+  color: white;
+}
+.custom-accordion-one .accordion-body {
+  background-color: #e9f2ff;
+  color: #003366;
+  border-left: 4px solid #007bff;
+  border-right: 4px solid #007bff;
+  padding: 1rem;
+}
+
+/* Accordion 2: Dark Theme */
+.custom-accordion-two {
+  background-color: #212529;
+  color: #f8f9fa;
+  border-radius: 5px;
+}
+.custom-accordion-two .accordion-button {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+.custom-accordion-two .accordion-button:not(.collapsed) {
+  background-color: #495057;
+  color: #ffffff;
+}
+.custom-accordion-two .accordion-body {
+  background-color: #2c2f33;
+  color: #e0e0e0;
+  padding: 1rem;
+}
+
+/* Accordion 3: Border Theme */
+.custom-accordion-three .accordion-item {
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.custom-accordion-three .accordion-button {
+  background-color: #ffffff;
+  color: #28a745;
+  font-weight: 600;
+}
+.custom-accordion-three .accordion-button:not(.collapsed) {
+  background-color: #e6ffee;
+  color: #1e7e34;
+}
+.custom-accordion-three .accordion-body {
+  border-top: 1px dashed #28a745;
+  background-color: #f5fff8;
+  color: #155724;
+  padding: 1rem;
+}

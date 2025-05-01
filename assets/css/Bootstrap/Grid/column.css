@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .navbar {
+    background-color: #1a1a1a; 
+    width: 100%;
+  }
+  .navbar-brand {
+    color: #20beff !important; 
+    font-weight: bold;
+  }
+  .navbar-nav .nav-link {
+    color: white;
+    margin-left: 15px;
+  }--
+  .navbar-nav .nav-link:hover {
+    color: #ffc107;
+  }
+  .navbar-nav .dropdown-menu {
+    background-color: #1a1a1a;
+    border: 2px solid #333;
+  }
+  .navbar-nav .dropdown-item {
+    color: white;
+  }
+  .navbar-nav .dropdown-item:hover {
+    background-color: #333;
+    color: #ffc107;
+  }
+  .navbar-toggler {
+    border-color: #ffc107;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 193, 7, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .search-bar {
+    margin-left: auto;
+    max-width: 500px;
+  }
+  .search-bar input[type="text"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+  
+  }
+  .search-bar input[type="text"]::placeholder {
+    color: #aaa; /* Placeholder text color */
+  }
+  
+  
+  .user-actions {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Vertically center items */
+    margin-left: 0; /* Reset default margin-left */
+  }
+  .user-actions a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  .user-actions a:hover {
+    color: #ffc107;
+  }
+  
+  
+  
+  
+  
+  /* Responsive adjustments using media queries */
+  @media (max-width: 992px) { /* Medium screens and below (typically tablets) */
+    .search-bar {
+        margin-left: 0; /* Reset margin-left on smaller screens */
+        margin-bottom: 10px; /* Add margin below search bar on smaller screens */
+        flex-grow: 0; /* Prevent search bar from taking up full width on small screens */
+        max-width: 100%; /* Ensure search bar doesn't overflow */
+    }
+    .navbar-nav {
+        margin-top: 10px; /* Add space above navbar items when collapsed */
+    }
+    .user-actions {
+        margin-left: 0; /* Ensure user actions are aligned on small screens */
+    }
+    .navbar-nav .nav-item {
+        margin-left: 0; /* Remove left margin from nav items on small screens */
+    }
+  }
+  
+  @media (max-width: 768px) { /* Small screens (typically mobile phones) */
+    .navbar-brand {
+        margin-right: 10px; /* Add some right margin to brand on small screens */
+    }
+    .navbar-toggler {
+        margin-left: auto; /* Push toggler to the right on small screens */
+    }
+    .user-actions {
+        flex-direction: column; /* Stack user actions vertically on very small screens */
+        align-items: flex-start; /* Align items to the start (top) */
+    }
+    .user-actions a {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add top margin between stacked user actions */
+    }
+     .search-bar button {
+        margin-right: 0;
+    }
+  }
+  
+  
+
+
+
+
+
+  /* Column structure css  */
+
+
+.comp-content{
+
+    /* margin: 130px; */
+    background-color: #f1f8f8;
+  
+}
+
+.comp-content h3{
+
+  text-align: left;
+  color: #235758;
+  font-weight: bold;
+}
+
+.comp-content p{
+
+  text-align: left;
+  color: #4f7171;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+
+.stats-container {
+  display: flex;
+  flex-wrap: nowrap; /* Keep everything on one line */
+  gap: 2rem;          /* Add spacing between items */
+  align-items: left;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+
+.stat-item {
+  text-align: left;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #235758;
+
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.9rem;
+  color:#13708c;
+}
+
+
+.card-content{
+
+    background-color: #ffffff;
+    display:inline;
+    margin: 30px;
+    box-shadow: #aaa;
+    margin-top: 100px !important;
+  
+    
+
+
+}
+
+.card-content h2{
+
+  text-align: left;
+  color:#0f586e;
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+.card-content p{
+
+  font-size: 14px;  
+
+}
+
+
+.card-content h3{
+
+  text-align: left;
+  font-size: 17px;
+  
+}
+
+.custom-card{
+
+  background-color: rgb(220, 239, 241);
+  
+  
+}
+
+.custom-card .txt-cont{
+
+  
+}
+
+
+
+
+.glutter-content{
+
+  background-color: #13708c;
+  margin: 40px;
+}

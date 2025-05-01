@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+/* ==========================================================================
+     Navigation Bar Styles
+     ========================================================================== */
+
+  .navbar {
+    background-color: #fffdfd;  
+    width: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px, rgba(60, 64, 67, 0.15) 0px 6px 10px 4px;
+}
+ 
+.custom-search-btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 500px;
+    height: 48px;
+    border: 1px solid #dadce0;
+    background: none;
+    color:  #5f6368;
+    border-radius: 24px;
+    white-space: nowrap;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  .user-content a {
+    color: rgb(3, 0, 3);
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 6px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    white-space: nowrap; 
+  }
+
+  .register-btn a {
+
+    padding: 8px 20px;
+    background-color: #000000;
+    border-radius: 19px 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 3px 0px,
+                rgba(60, 64, 67, 0.15) 0px 6px 10px 4px !important;
+  }
+  
+  .register-btn a:hover {
+    background-color: #000000; 
+    color: #000000;          
+    box-shadow: rgba(60, 64, 67, 0.4) 0px 4px 6px 0px,
+                rgba(60, 64, 67, 0.2) 0px 8px 14px 6px !important;
+                transition: all 0.3s ease; 
+
+  }
+
+
+
+
+
+
+  /* ==========================================================================
+     Hero Section Styles
+     ========================================================================== */
+
+.text-content h1{
+
+    text-align: left !important;
+    margin-top: 50px;
+
+   }
+
+.image-content img{
+
+    display: flex; 
+    margin-left: 360px;
+    margin-top: 30px;
+}
