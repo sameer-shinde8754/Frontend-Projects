@@ -1,57 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+  <title>DOM Example</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <div class="login-box">
-        <header>Login</header>
-    </div>
-<div class="input-box">
+<body class="p-4">
 
-<input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-<input type="Password" class="input-field" placeholder="Password" autocomplete="off" required>
-</div>
+  <h2 id="welcome">Hello, Guest!</h2>
+  <button class="btn btn-primary" onclick="changeText()">Click Me</button>
 
-<div class="forgot">
-<section>
-<input type="checkbox" name="remember" id="check">
-<label for="check">Remember me</label>
-</section>
-
-<section>
-
-    <a href="#">Forgot Password</a>
-
-</section></div>
-<div>
-<div class="input-submit">
-<button class="submit-btn" id="submit"></button>
-<label for="submit">Sign In</label>
-</div>
-<div class="sign-up-link">
-<p> Dont Have Account <a href="#" Sign Up> </a> </p>
-
-<br>
-
-
-
-</div>
-
-
-
-
-</div>
-      
-
-
-
-
-
-
-
-
+  <script>
+    function changeText() {
+      document.getElementById("welcome").innerText = "Welcome, Developer!";
+    }
+  </script>
 </body>
 </html>
