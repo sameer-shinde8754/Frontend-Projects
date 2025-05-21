@@ -1,21 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/media4.css"/>
+  <meta charset="UTF-8">
+  <title>Advanced Glow Button</title>
+  <style>
+    body {
+      background: #0a0a0a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
+    .glow-button {
+      position: relative;
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 18px;
+      color: #fff;
+      background: #111;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .glow-button::before,
+    .glow-button::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #0ff, #00f6ff, #00c3ff, #0ff);
+      z-index: -2;
+      filter: blur(10px);
+      opacity: 0.7;
+      transition: 0.3s ease;
+      border-radius: 12px;
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    .glow-button::after {
+      filter: blur(20px);
+      opacity: 0.4;
+      z-index: -3;
+    }
+
+    .glow-button:hover {
+      color: #0ff;
+      background-color: #222;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="card">
-    <img src="/assets/images/networking-removebg-preview.png" alt="Responsive" />
-    <h2>Responsive Image</h2>
-    <p> Button only shows on mobile </p>
-
-    <button class="btn">Mobile Responsive Button</button>
-  </div>
+  <button class="glow-button">Launch Software</button>
 
 </body>
 </html>
